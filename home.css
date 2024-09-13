@@ -1,0 +1,130 @@
+/* Styl ogólny */
+* {
+
+    background-image: baner.jpg    
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: baner.jpg    
+}
+
+/* Stylizacja nagłówka */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+/* Logo/Nazwa w lewym górnym rogu */
+.logo h1 {
+    color: #fff;
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Stylizacja nawigacji */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* Stylizacja rozwijanego menu */
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+/* Przycisk logowania i rejestracji */
+.auth-buttons a {
+    margin-left: 20px;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons a:hover {
+    background-color: #0056b3;
+}
+
+/* Główna sekcja */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: calc(100vh - 100px);
+    background-color: #fff;
+}
+
+.content {
+    max-width: 800px;
+}
+
+.content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.features {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 18px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Stylizacja dla ciemnego motywu */
+body.dark-theme {
+    background-color: #222;
+}
+
+body.dark-theme .logo h1,
+body.dark-theme .menu li a,
+body.dark-theme .auth-buttons a {
+    color: #fff;
+}
+
+body.dark-theme main .content h2,
+body.dark-theme main .content p {
+    color: #f4f4f4;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sign Up - ZoLcurity</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>ZoLcurity</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="description.html">Description</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <form>
+                <h2>Sign Up</h2>
+
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <!-- Checkbox Zgoda na regulamin -->
+                <div class="remember-me">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the Terms and Conditions</label>
+                </div>
+
+                <button class="login-btn" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>  
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Modern Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dodanie przycisku Back -->
+    <a href="index.html" class="back-btn">&larr; Back</a>
+
+    <div class="login-container">
+        <form>
+            <h2>Login</h2>
+            
+            <div class="input-box">
+                <input type="text" required>
+                <label>Username</label>
+            </div>
+
+            <div class="input-box">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+
+            <!-- Checkbox Remember Me -->
+            <div class="remember-me">
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember Me</label>
+            </div>
+
+            <button class="login-btn" type="submit">Login</button>
+        </form>
+
+        <!-- Przycisk zmiany motywu -->
+        <div class="theme-switcher">
+            <button id="theme-toggle" class="theme-btn">Change Theme</button>
+        </div>
+    </div>
+
+    <script>
+        // Przełączanie motywu ciemny/jasny
+        const themeToggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggleButton.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>

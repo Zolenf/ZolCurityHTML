@@ -1,0 +1,228 @@
+/* Stylizacja ogólna dla ciała strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    position: relative; /* Aby przycisk Back był w lewym górnym rogu */
+}
+
+/* Stylizacja dla ciemnego motywu */
+body.dark-theme {
+    background-color: #333;
+}
+
+/* Kontener formularza logowania */
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Ciemny motyw dla formularza */
+body.dark-theme .login-container {
+    background-color: #444;
+}
+
+/* Nagłówek formularza */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+body.dark-theme h2 {
+    color: #fff;
+}
+
+/* Stylizacja pól input */
+.input-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #333;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #999;
+    transition: top 0.3s, color 0.3s, transform 0.3s ease;
+}
+
+/* Input focus - zmiana koloru ramki i przesunięcie etykiety */
+.input-box input:focus {
+    border-bottom: 2px solid #007BFF;
+    box-shadow: 0 8px 6px -6px rgba(0, 123, 255, 0.5);
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+    top: -20px;
+    color: #007BFF;
+    transform: scale(0.9);
+}
+
+body.dark-theme .input-box input {
+    border-bottom: 2px solid #bbb;
+    color: #fff;
+}
+
+body.dark-theme .input-box label {
+    color: #bbb;
+}
+
+body.dark-theme .input-box input:focus {
+    border-bottom: 2px solid #66aaff;
+    box-shadow: 0 8px 6px -6px rgba(102, 170, 255, 0.5);
+}
+
+body.dark-theme .input-box input:focus ~ label {
+    color: #66aaff;
+}
+
+/* Przycisk logowania */
+.login-btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Przycisk zmiany motywu */
+.theme-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.theme-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Ciemny motyw dla przycisków */
+body.dark-theme .theme-btn,
+body.dark-theme .login-btn {
+    background-color: #66aaff;
+}
+
+body.dark-theme .theme-btn:hover,
+body.dark-theme .login-btn:hover {
+    background-color: #3399ff;
+}
+
+/* Stylizacja checkbox Remember Me */
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.remember-me input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #e0e0e0;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.remember-me input[type="checkbox"]:checked {
+    background-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.remember-me input[type="checkbox"]:checked::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 0 2px 2px;
+    transform: rotate(-45deg);
+    left: 5px;
+    top: 6px;
+}
+
+.remember-me label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+body.dark-theme .remember-me input[type="checkbox"] {
+    background-color: #777575;
+}
+
+body.dark-theme .remember-me input[type="checkbox"]:checked {
+    background-color: #66aaff;
+}
+
+body.dark-theme .remember-me label {
+    color: #ffffff;
+}
+
+/* Przyciski powrotu (Back button) */
+.back-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: transparent;
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #007BFF;
+}
+
+body.dark-theme .back-btn {
+    color: #bbb;
+}
+
+body.dark-theme .back-btn:hover {
+    color: #66aaff;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ZoLcurity - Secure Your Future</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+        <!-- Logo/Nazwa firmy w lewym górnym rogu -->
+        <div class="logo">
+            <h1>ZoLcurity</h1>
+        </div>
+
+        <!-- Rozwijane menu -->
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="description.html">Description</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Przycisk logowania/rejestracji -->
+            <div class="auth-buttons">
+                <a href="login.html" class="login-btn">Login</a>
+                <a href="signup.html" class="signup-btn">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Główna sekcja strony -->
+    <main>
+        <div class="content">
+            <h2>Secure Your Digital Life with ZoLcurity</h2>
+            <p>
+                We provide top-tier security services for individuals and businesses. 
+                Protect your data, enhance your privacy, and secure your online presence with the latest encryption technologies.
+            </p>
+            <ul class="features">
+                <li>Advanced Encryption</li>
+                <li>Threat Detection and Prevention</li>
+                <li>24/7 Monitoring Services</li>
+                <li>Cloud Security Solutions</li>
+                <li>Data Privacy and Compliance</li>
+            </ul>
+        </div>
+    </main>
+
+    <script>
+        // Funkcja obsługi rozwijanego menu
+        document.querySelector('.menu').addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    </script>   
+</body>
+</html>
